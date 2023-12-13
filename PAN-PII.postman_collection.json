@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "76307762-e9a8-4567-bc64-ec25c0172d6e",
+		"name": "PAN-PII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8805496"
+	},
+	"item": [
+		{
+			"name": "Detect",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"My phone number is 212-555-5555 or 4708152571 and the important info is 4147 2026 0114 6333\",\n    \"entities\": [\"PHONE_NUMBER\",\"CREDIT_CARD\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/detect",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"detect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detect Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"My phone number is 212-555-5555 or 4708152571 and the important info is 4147 2026 0114 6333\",\n    \"entities\": [\"PHONE_NUMBER\",\"CREDIT_CARD\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/detect",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"detect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"My phone number is 212-555-5555 or 4708152571 and the important info is 4147 2026 0114 6333\",\n    \"entities\": [\"PHONE_NUMBER\",\"CREDIT_CARD\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/detect",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"detect"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
